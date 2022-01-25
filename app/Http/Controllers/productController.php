@@ -9,4 +9,11 @@ class productController extends Controller
     public function manageProduct(){
         return view('backend.manage-product');
     }
+
+    public function addProductPage(){
+        return view('backend.add-product-page');
+    }
+    public function updateProductPage(){
+        return view("backend.update-product-page");
+    }
 }

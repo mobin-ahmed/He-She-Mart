@@ -15,10 +15,24 @@ class adminController extends Controller
         $p=$x[0]->password;
         $e=$x[0]->email;
         if($p == $req->password && $e == $req->email){
-            return view('backend.master');
+            return view('backend.dashboard');
         }
         else{
             return view('backend.login');
         }
     }
+
+    public function signUp(){
+        return view('backend.register');
+    }
+
+    public function register(Request $reg){
+        
+    }
+
+    public function dashboard(){
+        return view('backend.dashboard');
+    }
+
+    
 }
