@@ -14,22 +14,21 @@
 						
 						<div class="carousel-inner">
 							<div class="item active">
-								<div class="col-sm-6">
-									<h1><span>He-She-</span>Mart</h1>
-									
-									<button type="button" class="btn btn-default get">Get it now</button>
-								</div>
-								<div class="col-sm-6">
-									<img src="{{asset('/')}}/back-end/images/home/girl1.jpg" class="girl img-responsive" alt="" />
-									<img src="{{asset('/')}}/back-end/images/home/pricing.png"  class="pricing" alt="" />
+								
+								<div class="col-sm-12">
+									<img src="{{asset('/')}}/back-end/images/slider/slider1.png" class="girl img-responsive" alt="" height="150" />
 								</div>
 							</div>
 							<div class="item">
-								
+							<div class="col-sm-12">
+									<img src="{{asset('/')}}/back-end/images/slider/slider1.png" class="girl img-responsive" alt="" height="150"/>
+								</div>
 							</div>
 							
 							<div class="item">
-								
+							<div class="col-sm-12">
+									<img src="{{asset('/')}}/back-end/images/slider/slider1.png" class="girl img-responsive" alt="" height="150"/>
+								</div>
 							</div>
 							
 						</div>
@@ -59,18 +58,18 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 										<div class="productinfo text-center">
-											<img src="{{asset('/')}}/back-end/images/home/product1.jpg" alt="" />
-											<h2>$56</h2>
-											<p>Easy Polo Black Edition</p>
+											<img src="{{asset('/')}}/back-end/images/products/p1.jpg" alt="" height="300" weight="300"/>
+											<h2>850 tk</h2>
+											<p>Easy's product</p>
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
-										<div class="product-overlay">
+										<!-- <div class="product-overlay">
 											<div class="overlay-content">
-												<h2>$56</h2>
-												<p>Easy Polo Black Edition</p>
+												<h2>850 tk</h2>
+												<p>Easy's product</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 											</div>
-										</div>
+										</div> -->
 								</div>
 								<div class="choose">
 									<ul class="nav nav-pills nav-justified">
@@ -80,22 +79,23 @@
 								</div>
 							</div>
 						</div>
+
 						<div class="col-sm-4">
 							<div class="product-image-wrapper">
 								<div class="single-products">
-									<div class="productinfo text-center">
-										<img src="{{asset('/')}}/back-end/images/home/product2.jpg" alt="" />
-										<h2>$56</h2>
-										<p>Easy Polo Black Edition</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-									</div>
-									<div class="product-overlay">
-										<div class="overlay-content">
-											<h2>$56</h2>
-											<p>Easy Polo Black Edition</p>
+										<div class="productinfo text-center">
+											<img src="{{asset('/')}}/back-end/images/products/p2.jpg" alt="" height="300" weight="300"/>
+											<h2>850 tk</h2>
+											<p>Easy's product</p>
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
-									</div>
+										<!-- <div class="product-overlay">
+											<div class="overlay-content">
+												<h2>850 tk</h2>
+												<p>Easy's product</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+										</div> -->
 								</div>
 								<div class="choose">
 									<ul class="nav nav-pills nav-justified">
@@ -105,22 +105,23 @@
 								</div>
 							</div>
 						</div>
+
 						<div class="col-sm-4">
 							<div class="product-image-wrapper">
 								<div class="single-products">
-									<div class="productinfo text-center">
-										<img src="{{asset('/')}}/back-end/images/home/product3.jpg" alt="" />
-										<h2>$56</h2>
-										<p>Easy Polo Black Edition</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-									</div>
-									<div class="product-overlay">
-										<div class="overlay-content">
-											<h2>$56</h2>
-											<p>Easy Polo Black Edition</p>
+										<div class="productinfo text-center">
+											<img src="{{asset('/')}}/back-end/images/products/p3.jpg" alt="" height="300" weight="300"/>
+											<h2>850 tk</h2>
+											<p>Easy's product</p>
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
-									</div>
+										<!-- <div class="product-overlay">
+											<div class="overlay-content">
+												<h2>850 tk</h2>
+												<p>Easy's product</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+										</div> -->
 								</div>
 								<div class="choose">
 									<ul class="nav nav-pills nav-justified">
@@ -130,23 +131,23 @@
 								</div>
 							</div>
 						</div>
+
 						<div class="col-sm-4">
 							<div class="product-image-wrapper">
 								<div class="single-products">
-									<div class="productinfo text-center">
-										<img src="{{asset('/')}}/back-end/images/home/product4.jpg" alt="" />
-										<h2>$56</h2>
-										<p>Easy Polo Black Edition</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-									</div>
-									<div class="product-overlay">
-										<div class="overlay-content">
-											<h2>$56</h2>
-											<p>Easy Polo Black Edition</p>
+										<div class="productinfo text-center">
+											<img src="{{asset('/')}}/back-end/images/products/p4.jpg" alt="" height="300" weight="300"/>
+											<h2>850 tk</h2>
+											<p>Easy's product</p>
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
-									</div>
-									<img src="{{asset('/')}}/back-end/images/home/new.png" class="new" alt="" />
+										<!-- <div class="product-overlay">
+											<div class="overlay-content">
+												<h2>850 tk</h2>
+												<p>Easy's product</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+										</div> -->
 								</div>
 								<div class="choose">
 									<ul class="nav nav-pills nav-justified">
@@ -156,23 +157,23 @@
 								</div>
 							</div>
 						</div>
+
 						<div class="col-sm-4">
 							<div class="product-image-wrapper">
 								<div class="single-products">
-									<div class="productinfo text-center">
-										<img src="{{asset('/')}}/back-end/images/home/product5.jpg" alt="" />
-										<h2>$56</h2>
-										<p>Easy Polo Black Edition</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-									</div>
-									<div class="product-overlay">
-										<div class="overlay-content">
-											<h2>$56</h2>
-											<p>Easy Polo Black Edition</p>
+										<div class="productinfo text-center">
+											<img src="{{asset('/')}}/back-end/images/products/p5.jpg" alt="" height="300" weight="300"/>
+											<h2>850 tk</h2>
+											<p>Easy's product</p>
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
-									</div>
-									<img src="{{asset('/')}}/back-end/images/home/sale.png" class="new" alt="" />
+										<!-- <div class="product-overlay">
+											<div class="overlay-content">
+												<h2>850 tk</h2>
+												<p>Easy's product</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+										</div> -->
 								</div>
 								<div class="choose">
 									<ul class="nav nav-pills nav-justified">
@@ -182,22 +183,23 @@
 								</div>
 							</div>
 						</div>
+
 						<div class="col-sm-4">
 							<div class="product-image-wrapper">
 								<div class="single-products">
-									<div class="productinfo text-center">
-										<img src="{{asset('/')}}/back-end/images/home/product6.jpg" alt="" />
-										<h2>$56</h2>
-										<p>Easy Polo Black Edition</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-									</div>
-									<div class="product-overlay">
-										<div class="overlay-content">
-											<h2>$56</h2>
-											<p>Easy Polo Black Edition</p>
+										<div class="productinfo text-center">
+											<img src="{{asset('/')}}/back-end/images/products/p6.jpg" alt="" height="300" weight="300"/>
+											<h2>850 tk</h2>
+											<p>Easy's product</p>
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
-									</div>
+										<!-- <div class="product-overlay">
+											<div class="overlay-content">
+												<h2>850 tk</h2>
+												<p>Easy's product</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+										</div> -->
 								</div>
 								<div class="choose">
 									<ul class="nav nav-pills nav-justified">
@@ -207,6 +209,9 @@
 								</div>
 							</div>
 						</div>
+						
+						
+						
 						
 					</div><!--features_items-->
 					
@@ -222,9 +227,9 @@
 										<div class="product-image-wrapper">
 											<div class="single-products">
 												<div class="productinfo text-center">
-													<img src="{{asset('/')}}/back-end/images/home/recommend1.jpg" alt="" />
-													<h2>$56</h2>
-													<p>Easy Polo Black Edition</p>
+													<img src="{{asset('/')}}/back-end/images/products/p11.jpg" alt="" height="300" weight="300"/>
+													<h2>1005 tk</h2>
+													<p>Additas's products</p>
 													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 												</div>
 												
@@ -235,9 +240,9 @@
 										<div class="product-image-wrapper">
 											<div class="single-products">
 												<div class="productinfo text-center">
-													<img src="{{asset('/')}}/back-end/images/home/recommend2.jpg" alt="" />
-													<h2>$56</h2>
-													<p>Easy Polo Black Edition</p>
+													<img src="{{asset('/')}}/back-end/images/products/p13.jpg" alt="" height="300" weight="300"/>
+													<h2>1005 tk</h2>
+													<p>Additas's products</p>
 													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 												</div>
 												
@@ -248,9 +253,9 @@
 										<div class="product-image-wrapper">
 											<div class="single-products">
 												<div class="productinfo text-center">
-													<img src="{{asset('/')}}/back-end/images/home/recommend3.jpg" alt="" />
-													<h2>$56</h2>
-													<p>Easy Polo Black Edition</p>
+													<img src="{{asset('/')}}/back-end/images/products/p10.jpg" alt="" height="300" weight="300"/>
+													<h2>1005 tk</h2>
+													<p>Additas's products</p>
 													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 												</div>
 												
@@ -263,9 +268,9 @@
 										<div class="product-image-wrapper">
 											<div class="single-products">
 												<div class="productinfo text-center">
-													<img src="{{asset('/')}}/back-end/images/home/recommend1.jpg" alt="" />
-													<h2>$56</h2>
-													<p>Easy Polo Black Edition</p>
+													<img src="{{asset('/')}}/back-end/images/products/p12.jpg" alt="" height="300" weight="300"/>
+													<h2>1005 tk</h2>
+													<p>Additas's products</p>
 													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 												</div>
 												
@@ -276,9 +281,9 @@
 										<div class="product-image-wrapper">
 											<div class="single-products">
 												<div class="productinfo text-center">
-													<img src="{{asset('/')}}/back-end/images/home/recommend2.jpg" alt="" />
-													<h2>$56</h2>
-													<p>Easy Polo Black Edition</p>
+													<img src="{{asset('/')}}/back-end/images/products/p8.jpg" alt="" height="300" weight="300"/>
+													<h2>1005 tk</h2>
+													<p>Additas's products</p>
 													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 												</div>
 												
@@ -289,9 +294,9 @@
 										<div class="product-image-wrapper">
 											<div class="single-products">
 												<div class="productinfo text-center">
-													<img src="{{asset('/')}}/back-end/images/home/recommend3.jpg" alt="" />
-													<h2>$56</h2>
-													<p>Easy Polo Black Edition</p>
+													<img src="{{asset('/')}}/back-end/images/products/p9.jpg" alt="" height="300" weight="300"/>
+													<h2>1005 tk</h2>
+													<p>Additas's products</p>
 													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 												</div>
 												

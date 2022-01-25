@@ -91,7 +91,7 @@
 								<li><a href="{{url('home')}}" class="active">Home</a></li>
 								<li class="dropdown"><a href="#">Shop<i class="fa fa-angle-down"></i></a>
                                     <ul role="menu" class="sub-menu">
-                                        <li><a href="shop.html">Products</a></li>
+                                        
 										<li><a href="{{url('product-details-page')}}">Product Details</a></li> 
 										<li><a href="{{url('checkout-page')}}">Checkout</a></li> 
 										<li><a href="{{url('cart-page')}}">Cart</a></li> 
