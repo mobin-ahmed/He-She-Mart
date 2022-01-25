@@ -53,9 +53,9 @@ value="1"/>Published</label>
 value="0"/>Unpublished</label>
                         </div>
                     </div>
-                    <div class="form-control">
+                    <div>
                         <div class="col-md-8 col-md-offset-4">
-                            <input type="submit" name="btn" class="btn btn-danger btn-block" 
+                            <input type="submit" name="btn" class="btn btn-danger" 
 value="Add Product"/>
                         </div>
                     </div>

@@ -25,7 +25,7 @@
 </head><!--/head-->
 
 <body style="background-color: gray">
-	<header id="header" style="background-color: lightgreen"><!--header-->
+	<header id="header" style="background-color: lightgreen;"><!--header-->
 		<div class="header_top" style="background-color: skyblue"><!--header_top-->
 			<div class="container">
 				<div class="row">
@@ -202,7 +202,7 @@
 			<div class="container">
 				<div class="row">
 					<p class="pull-left">Copyright © 2013 E-SHOPPER Inc. All rights reserved.</p>
-					<p class="pull-right">Designed by <span><a target="_blank">Anwar Hussain</a></span></p>
+					<p class="pull-right">Designed by <span><a target="_blank">Anwar Hossain</a></span></p>
 				</div>
 			</div>
 		</div>

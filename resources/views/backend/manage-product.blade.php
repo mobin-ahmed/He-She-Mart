@@ -37,7 +37,9 @@
                                             <td>Dark Blue</td>
                                             <td>good level</td>
                                             <td>best sell of the month</td>
-                                            <td>...</td>
+                                            <td>
+                                                <img src="{{asset('/')}}/back-end/images/products/p6.jpg" alt="" height="80" width="80">
+                                            </td>
                                             <td>1</td>
                                             <td><a href="{{ url('update-product-page') }}" class="btn btn-success">Update Product</a><a href="" class="btn btn-danger">Delete Product</a></td>
                                         </tr>
@@ -48,7 +50,9 @@
                                             <td>Dark Blue</td>
                                             <td>good level</td>
                                             <td>best sell of the month</td>
-                                            <td>...</td>
+                                            <td>
+                                                <img src="{{asset('/')}}/back-end/images/products/p5.jpg" alt="" height="80" width="80">
+                                            </td>
                                             <td>1</td>
                                             <td><a href="{{ url('update-product-page') }}" class="btn btn-success">Update Product</a><a href="" class="btn btn-danger">Delete Product</a></td>
                                         </tr>
@@ -59,7 +63,9 @@
                                             <td>Dark Blue</td>
                                             <td>good level</td>
                                             <td>best sell of the month</td>
-                                            <td>...</td>
+                                            <td>
+                                                <img src="{{asset('/')}}/back-end/images/products/p4.jpg" alt="" height="80" width="80">
+                                            </td>
                                             <td>1</td>
                                             <td><a href="{{ url('update-product-page') }}" class="btn btn-success">Update Product</a><a href="" class="btn btn-danger">Delete Product</a></td>
                                         </tr>
@@ -70,7 +76,9 @@
                                             <td>Dark Blue</td>
                                             <td>good level</td>
                                             <td>best sell of the month</td>
-                                            <td>...</td>
+                                            <td>
+                                                <img src="{{asset('/')}}/back-end/images/products/p3.jpg" alt="" height="80" width="80">
+                                            </td>
                                             <td>1</td>
                                             <td><a href="{{ url('update-product-page') }}" class="btn btn-success">Update Product</a><a href="" class="btn btn-danger">Delete Product</a></td>
                                         </tr>
@@ -81,7 +89,9 @@
                                             <td>Dark Blue</td>
                                             <td>good level</td>
                                             <td>best sell of the month</td>
-                                            <td>...</td>
+                                            <td>
+                                                <img src="{{asset('/')}}/back-end/images/products/p2.jpg" alt="" height="80" width="80">
+                                            </td>
                                             <td>1</td>
                                             <td><a href="{{ url('update-product-page') }}" class="btn btn-success">Update Product</a><a href="" class="btn btn-danger">Delete Product</a></td>
                                         </tr>
@@ -92,7 +102,9 @@
                                             <td>Dark Blue</td>
                                             <td>good level</td>
                                             <td>best sell of the month</td>
-                                            <td>...</td>
+                                            <td>
+                                                <img src="{{asset('/')}}/back-end/images/products/p1.jpg" alt="" height="80" width="80">
+                                            </td>
                                             <td>1</td>
                                             <td><a href="{{ url('update-product-page') }}" class="btn btn-success">Update Product</a><a href="" class="btn btn-danger">Delete Product</a></td>
                                         </tr>
@@ -103,7 +115,9 @@
                                             <td>Dark Blue</td>
                                             <td>good level</td>
                                             <td>best sell of the month</td>
-                                            <td>...</td>
+                                            <td>
+                                                <img src="{{asset('/')}}/back-end/images/products/p8.jpg" alt="" height="80" width="80">
+                                            </td>
                                             <td>1</td>
                                             <td><a href="{{ url('update-product-page') }}" class="btn btn-success">Update Product</a><a href="" class="btn btn-danger">Delete Product</a></td>
                                         </tr>
@@ -114,7 +128,9 @@
                                             <td>Dark Blue</td>
                                             <td>good level</td>
                                             <td>best sell of the month</td>
-                                            <td>...</td>
+                                            <td>
+                                                <img src="{{asset('/')}}/back-end/images/products/p9.jpg" alt="" height="80" width="80">
+                                            </td>
                                             <td>1</td>
                                             <td><a href="{{ url('update-product-page') }}" class="btn btn-success">Update Product</a><a href="" class="btn btn-danger">Delete Product</a></td>
                                         </tr>
@@ -125,7 +141,9 @@
                                             <td>Dark Blue</td>
                                             <td>good level</td>
                                             <td>best sell of the month</td>
-                                            <td>...</td>
+                                            <td>
+                                                <img src="{{asset('/')}}/back-end/images/products/p13.jpg" alt="" height="80" width="80">
+                                            </td>
                                             <td>1</td>
                                             <td><a href="{{ url('update-product-page') }}" class="btn btn-success">Update Product</a><a href="" class="btn btn-danger">Delete Product</a></td>
                                         </tr>
