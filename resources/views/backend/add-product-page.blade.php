@@ -5,43 +5,53 @@
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="text-center text-danger">Add Product</h4>
+                <p class="alert-success">
+            <?php 
+                $msg=Session::get('message');
+                if($msg){
+                    echo $msg;
+                    Session::put('message',null);
+                }
+            ?>
+        </p>
             </div>
             <div class="panel-body">
-                <form action="" method="POST" class="form-horizontal">
+                <form action="{{ url('add-product') }}" method="POST" class="form-horizontal" enctype="multipart/form-data">
+                    {{ csrf_field() }}
                     <div class="form-group">
                         <label class="control-label col-md-4">Product Name</label>
                         <div class="col-md-8">
-                            <input type="text" name="category_name" class="form-control"/>
+                            <input type="text" name="product_name" class="form-control"/>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="control-label col-md-4">Product price</label>
                         <div class="col-md-8">
-                            <input type="number" name="category_name" class="form-control"/>
+                            <input type="number" name="product_price" class="form-control"/>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="control-label col-md-4">Product color</label>
                         <div class="col-md-8">
-                            <input type="text" name="category_name" class="form-control"/>
+                            <input type="text" name="product_color" class="form-control"/>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="control-label col-md-4">Product short description</label>
                         <div class="col-md-8">
-                            <input type="text" name="category_name" class="form-control"/>
+                            <input type="text" name="product_short_description" class="form-control"/>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="control-label col-md-4">Product long description</label>
                         <div class="col-md-8">
-                            <textarea class="form-cotrol" name="category_description"></textarea>
+                            <textarea class="form-cotrol" name="product_long_description"></textarea>
                         </div>
                     </div>
                     <div class="form-group">
                     <label class="control-label col-md-4">Product Image</label>
                         <div class="col-md-8">
-                            <input type="file" name="category_name" class="form-control"/>
+                            <input type="file" name="product_image" class="form-control"/>
                         </div>
                     </div>
                     <div class="form-group">

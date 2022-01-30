@@ -26,7 +26,10 @@ Route::get('/sign-up', [adminController::class,'signUp']);
 Route::post('/register', [adminController::class,'register']);
 Route::get('/dashboard', [adminController::class,'dashboard']);
 Route::get('/add-product-page', [productController::class,'addProductPage']);
-Route::get('/update-product-page', [productController::class,'updateProductPage']);
+Route::post('add-product', [productController::class,'addProduct']);
+Route::get('delete-product/{id}', [productController::class,'deleteProduct']);
+Route::get('/update-product-page/{id}', [productController::class,'updateProductPage']);
+Route::post('/update-product/{id}', [productController::class,'updateProduct']);
 
 
 // front-end(userinterface)..................
