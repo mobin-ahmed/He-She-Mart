@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 30, 2022 at 10:26 AM
+-- Generation Time: Jan 31, 2022 at 11:43 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.1
 
@@ -40,6 +40,14 @@ CREATE TABLE `admins` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `admins`
+--
+
+INSERT INTO `admins` (`id`, `fullname`, `user_name`, `email`, `mobile`, `image`, `password`, `address`, `created_at`, `updated_at`) VALUES
+(8, 'Anwar Hussain', 'anwar', 'info.anwarcse@gmail.com', '01718500099', 'image/832007.jpeg', '123', 'Sylhet', '2022-02-01 02:57:04', '2022-02-01 02:57:04'),
+(9, 'Ms Munalisa', 'munalisa', 'munalisa@gmail.com', '3269862786', 'image/276184.jpg', '456', 'Dhaka', '2022-02-01 02:59:33', '2022-02-01 02:59:33');
+
 -- --------------------------------------------------------
 
 --
@@ -59,7 +67,8 @@ CREATE TABLE `migrations` (
 INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (1, '2019_12_14_000001_create_personal_access_tokens_table', 1),
 (2, '2022_01_29_205546_create_admins_table', 1),
-(3, '2022_01_29_212235_create_products_table', 2);
+(3, '2022_01_29_212235_create_products_table', 2),
+(4, '2022_01_31_215626_create_users_table', 3);
 
 -- --------------------------------------------------------
 
@@ -103,7 +112,36 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `product_name`, `product_price`, `product_color`, `product_short_description`, `product_long_description`, `product_image`, `publication_status`, `created_at`, `updated_at`) VALUES
-(5, 'Shool Bag', '590', 'Black', 'Black school bag  imported from China.', 'Bag description', 'image/506899.jpg', '1', '2022-01-30 10:24:25', '2022-01-30 10:24:25');
+(6, 'Mobile', '8000', 'Blue', 'this is best', 'Brand is Sumsung', 'image/850051.jpg', '1', '2022-02-01 03:04:55', '2022-02-01 03:04:55');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `fullname` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `username` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `mobile` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `address` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `fullname`, `username`, `email`, `mobile`, `image`, `password`, `address`, `created_at`, `updated_at`) VALUES
+(1, 'Anwar Hussain', 'anwar', 'info.anwarcse@gmail.com', '4141314434', '', '123', 'syhet', '2022-02-01 06:14:57', '2022-02-01 06:14:57'),
+(2, 'Anwar Hussain', 'anwar', 'info.anwarcse@gmail.com', '4141314434', '', '123', 'syhet', '2022-02-01 06:29:18', '2022-02-01 06:29:18'),
+(3, 'Anwar Hussain', 'anwar', 'info.anwarcse@gmail.com', '4141314434', '', '123', 'syhet', '2022-02-01 06:29:34', '2022-02-01 06:29:34'),
+(4, 'Anwar Hussain', 'anwar', 'info.anwarcse@gmail.com', '4141314434', '', '123', 'syhet', '2022-02-01 06:34:59', '2022-02-01 06:34:59');
 
 --
 -- Indexes for dumped tables
@@ -136,6 +174,12 @@ ALTER TABLE `products`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -143,13 +187,13 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `admins`
 --
 ALTER TABLE `admins`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `personal_access_tokens`
@@ -161,7 +205,13 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
