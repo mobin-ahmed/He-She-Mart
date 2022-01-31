@@ -1,3 +1,13 @@
+<?php
+    // session_start();
+    $admin_id = Session::get("admin_id");
+    if($admin_id != null){
+       redirect('/dashboard'); 
+    }
+    else{
+        redirect('/login');
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>

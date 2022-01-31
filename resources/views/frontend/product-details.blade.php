@@ -10,7 +10,7 @@
 					<div class="product-details"><!--product-details-->
 						<div class="col-sm-5">
 							<div class="view-product">
-								<img src="{{asset('/')}}/back-end/images/products/p6.jpg" alt="" />
+								<img src="{{url("$product->product_image")}}" alt="" />
 							</div>
 							<!-- <div id="similar-product" class="carousel slide" data-ride="carousel"> -->
 								
@@ -47,11 +47,11 @@
 						<div class="col-sm-7">
 							<div class="product-information"><!--/product-information-->
 								<img src="{{asset('/')}}/back-end/images/product-details/new.jpg" class="newarrival" alt="" />
-								<h2>Mobile</h2>
-								<p>Web ID: 1089772</p>
+								<h2>{{$product->product_name}}</h2>
+								<p>ID: {{$product->id}}</p>
 								<img src="{{asset('/')}}/back-end/images/product-details/rating.png" alt="" />
 								<span>
-									<span>11000 tk</span>
+									<span>{{$product->product_price}} tk</span>
 									<label>Quantity: </label>
 									<input type="text" value="0" />
 									<button type="button" class="btn btn-fefault cart">
@@ -59,9 +59,10 @@
 										Add to cart
 									</button>
 								</span>
-								<p><b>Availability:</b> In Stock</p>
-								<p><b>Condition:</b> not new</p>
-								<p>Sumsung's product</p>
+								<p><b>Color:</b> {{$product->product_color}}</p>
+								
+								<p><b>Product short description:</b><br/>{{$product->product_short_description}}</p>
+								<p><b>Product long description:</b><br/>{{$product->product_long_description}}</p>
 								<!-- <a href=""><img src="{{asset('/')}}/back-end/images/product-details/share.png" class="share img-responsive"  alt="" /></a> -->
 							</div><!--/product-information-->
 						</div>
@@ -104,87 +105,21 @@
 						
 						<div id="recommended-item-carousel" class="carousel slide" data-ride="carousel">
 							<div class="carousel-inner">
-								<div class="item active">	
+								<div class="item active">
+								@foreach($p as $products2)
 									<div class="col-sm-4">
 										<div class="product-image-wrapper">
 											<div class="single-products">
 												<div class="productinfo text-center">
-													<img src="{{asset('/')}}/back-end/images/products/p11.jpg" alt="" height="300" weight="300"/>
-													<h2>1005 tk</h2>
-													<p>Additas's products</p>
-													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+													<img src="{{url("$products2->product_image")}}" alt="" height="300" weight="300"/>
+													<h2>{{$products2->product_price}} tk</h2>
+													<a href="{{url('/product-details-page/'.$products2->id)}}" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Product details</a>
 												</div>
 												
 											</div>
 										</div>
 									</div>
-									<div class="col-sm-4">
-										<div class="product-image-wrapper">
-											<div class="single-products">
-												<div class="productinfo text-center">
-													<img src="{{asset('/')}}/back-end/images/products/p13.jpg" alt="" height="300" weight="300"/>
-													<h2>1005 tk</h2>
-													<p>Additas's products</p>
-													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-												</div>
-												
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-4">
-										<div class="product-image-wrapper">
-											<div class="single-products">
-												<div class="productinfo text-center">
-													<img src="{{asset('/')}}/back-end/images/products/p10.jpg" alt="" height="300" weight="300"/>
-													<h2>1005 tk</h2>
-													<p>Additas's products</p>
-													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-												</div>
-												
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="item">	
-									<div class="col-sm-4">
-										<div class="product-image-wrapper">
-											<div class="single-products">
-												<div class="productinfo text-center">
-													<img src="{{asset('/')}}/back-end/images/products/p12.jpg" alt="" height="300" weight="300"/>
-													<h2>1005 tk</h2>
-													<p>Additas's products</p>
-													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-												</div>
-												
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-4">
-										<div class="product-image-wrapper">
-											<div class="single-products">
-												<div class="productinfo text-center">
-													<img src="{{asset('/')}}/back-end/images/products/p8.jpg" alt="" height="300" weight="300"/>
-													<h2>1005 tk</h2>
-													<p>Additas's products</p>
-													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-												</div>
-												
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-4">
-										<div class="product-image-wrapper">
-											<div class="single-products">
-												<div class="productinfo text-center">
-													<img src="{{asset('/')}}/back-end/images/products/p9.jpg" alt="" height="300" weight="300"/>
-													<h2>1005 tk</h2>
-													<p>Additas's products</p>
-													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-												</div>
-												
-											</div>
-										</div>
-									</div>
+								@endforeach
 								</div>
 							</div>
 							 <a class="left recommended-item-control" href="#recommended-item-carousel" data-slide="prev">

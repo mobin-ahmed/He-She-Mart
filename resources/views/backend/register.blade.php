@@ -13,7 +13,7 @@
                                         ?>
                                     </p>
                                     <div class="card-body">
-                                        <form action="{{ url('register') }}" method="POST" enctype="multipart/form-data">
+                                        <form action="{{ url('admin-register') }}" method="POST" enctype="multipart/form-data">
                                             {{ csrf_field() }}
                                             <div class="row mb-3">
                                                 <div class="col-md-6">

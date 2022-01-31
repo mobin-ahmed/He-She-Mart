@@ -3,41 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Admin;
-use Illuminate\Support\Facades\Session;
+use App\Models\User;
 use DB;
-class adminController extends Controller
+
+class userController extends Controller
 {
-    public function index(){
-        return view('backend.admin_login');
-    }
-    public function signIn(Request $req){
-
-        $admin = Admin::first();
-        $id = $admin->id;
-        $username = $admin->username;
-        $image = $admin->image;
-        $p=$admin->password;
-        $e=$admin->email;
-        if($p == $req->password && $e == $req->email){
-            session_start();
-            Session::put('admin_id', $id);
-            Session::put('username', $username);
-
-
-            return view('backend.dashboard', ['admin'=>$admin]);
-        }
-        else{
-            return redirect("/admin_login");
-        }
-    }
-
-    public function signUp(){
-        return view('backend.register');
-    }
-
-    public function register(Request $req){
-
+    public function userRegister(Request $req){
         // $data =  array();
         // $data['fullname']= $req->fullname;
         // $data['username']= $req->username;
@@ -69,9 +40,9 @@ class adminController extends Controller
         // return Redirect::to('/register');
 
 
-        $data=new Admin;
+        $data=new User;
         $data->fullname = $req->fullname;
-        $data->user_name = $req->user_name;
+        $data->username = $req->username;
         $data->email = $req->email;
         $data->mobile = $req->mobile;
         $data->password = $req->password;
@@ -89,27 +60,26 @@ class adminController extends Controller
             if($succes){
                 $data->image=$image_url;
                 $data->save();
-                Session::put('message','Admin register successfully');
-                return redirect('/admin-register');
+                return view('frontend.login-register', ['msg'=>'User register successfully']);
             }
         }
 
         $data->image='';
         $data->save();
-        Session::put('message','Admin register successfully');
-        return redirect('/admin-register');
-
-
+        return view('frontend.login-register', ['msg'=>'User register successfully']);
     }
 
-    public function dashboard(){
-        return view('backend.dashboard');
-    }
+    public function userLogin(Request $req){
+        $info= DB::table("users")
+            ->where('email', $req->email)
+            ->where('password', $req->password)
+            ->get();
 
-    public function logout(){
-        Session::flush();
-        return view('backend.admin_login');
+        if($info->email == $req->email && $info->password == $req->password){
+            return view('frontend.checkout');
+        }
+        else{
+            return view('frontend.login-register', ['msg'=> 'login failed']);
+        }
     }
-
-    
 }

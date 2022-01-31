@@ -4,7 +4,7 @@
 <div class="col-md-10 col-md-offset-1 bg-info p-3">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h4 class="text-center text-danger">Add Product</h4>
+                <h4 class="text-center text-danger">Update Product</h4>
             </div>
             <div class="panel-body">
             

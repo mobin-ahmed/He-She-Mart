@@ -1,3 +1,13 @@
+<?php
+    // session_start();
+    $admin_id = Session::get("admin_id");
+    if($admin_id != null){
+       redirect('/dashboard'); 
+    }
+    else{
+        redirect('/login');
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -41,7 +51,7 @@
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="{{ url('sign-up') }}">Sign Up</a></li>
                         <li><hr class="dropdown-divider" /></li>
-                        <li><a class="dropdown-item" href="#!">Logout</a></li>
+                        <li><a class="dropdown-item" href="{{ url('logout') }}">Logout</a></li>
                     </ul>
                 </li>
             </ul>
@@ -81,8 +91,8 @@
                                     </a>
                                     <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
                                         <nav class="sb-sidenav-menu-nested nav">
-                                            <a class="nav-link" href="login.html">Sign Up</a>
-                                            <a class="nav-link" href="register.html">Logout</a>
+                                            <a class="nav-link" href="{{ url('sign-up') }}">Sign Up</a>
+                                            <a class="nav-link" href="{{ url('logout') }}">Logout</a>
                                         </nav>
                                     </div>
                                    
