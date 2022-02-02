@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 31, 2022 at 11:43 PM
+-- Generation Time: Feb 02, 2022 at 07:21 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.1
 
@@ -45,7 +45,7 @@ CREATE TABLE `admins` (
 --
 
 INSERT INTO `admins` (`id`, `fullname`, `user_name`, `email`, `mobile`, `image`, `password`, `address`, `created_at`, `updated_at`) VALUES
-(8, 'Anwar Hussain', 'anwar', 'info.anwarcse@gmail.com', '01718500099', 'image/832007.jpeg', '123', 'Sylhet', '2022-02-01 02:57:04', '2022-02-01 02:57:04'),
+(8, 'Anwar Hussain', 'anwar', 'info.anwarcse@gmail.com', '01718500099', 'image/my1.jpeg', '123', 'Sylhet', '2022-02-01 02:57:04', '2022-02-01 02:57:04'),
 (9, 'Ms Munalisa', 'munalisa', 'munalisa@gmail.com', '3269862786', 'image/276184.jpg', '456', 'Dhaka', '2022-02-01 02:59:33', '2022-02-01 02:59:33');
 
 -- --------------------------------------------------------
@@ -112,7 +112,12 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `product_name`, `product_price`, `product_color`, `product_short_description`, `product_long_description`, `product_image`, `publication_status`, `created_at`, `updated_at`) VALUES
-(6, 'Mobile', '8000', 'Blue', 'this is best', 'Brand is Sumsung', 'image/850051.jpg', '1', '2022-02-01 03:04:55', '2022-02-01 03:04:55');
+(6, 'Mobile', '8000', 'Blue', 'this is best', 'Brand is Sumsung', 'image/850051.jpg', '1', '2022-02-01 03:04:55', '2022-02-01 03:04:55'),
+(7, 'Watch', '13900', 'Gold Color', 'It\'s brand new watch.', 'This product imported from China. We have five colors.', 'image/955213.jpg', '1', '2022-02-01 15:00:45', '2022-02-01 15:00:45'),
+(8, 'Apple Laptop', '87000', 'Grew', 'This an apple brand dew laptop imported very recent. Fixed price we have limited quantiy.', 'This an apple brand dew laptop imported very recent. Fixed price we have limited quantiy.', 'image/163929.jpg', '1', '2022-02-01 22:23:23', '2022-02-01 22:23:23'),
+(9, 'Baby Troys', '990', 'Black,Red', 'We have different types of baby troy.', 'We have different types of baby troy.', 'image/542009.jpg', '1', '2022-02-01 22:25:40', '2022-02-01 22:25:40'),
+(10, 'T shart', '1200', 'White Blue', 'This t shart is 100% cotton quality.', 'This t shart is 100% cotton quality.It has many colors.', 'image/526923.jpg', '1', '2022-02-01 22:27:01', '2022-02-01 22:27:01'),
+(11, 'Sun Glass', '1500', 'Black', 'This an polarized sun glass imported from Russia.', 'This an polarized sun glass imported from Russia. It has also more color available.', 'image/466385.webp', '1', '2022-02-01 22:28:59', '2022-02-01 22:28:59');
 
 -- --------------------------------------------------------
 
@@ -205,7 +210,7 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `users`
