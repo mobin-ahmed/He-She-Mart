@@ -117,8 +117,8 @@ class productController extends Controller
                 DB::table('products')
             ->where('id',$id)
             ->update($data);
-        Session::put('message','product Update succesfully!');
-        return redirect('/manage-product');
+            Session::put('message','product Update succesfully!');
+            return redirect('/manage-product');
             }
         }
 

@@ -52,17 +52,23 @@
 								<img src="{{asset('/')}}/back-end/images/product-details/rating.png" alt="" />
 								<span>
 									<span>{{$product->product_price}} tk</span>
-									<label>Quantity: </label>
-									<input type="text" value="0" />
-									<button type="button" class="btn btn-fefault cart">
-										<i class="fa fa-shopping-cart"></i>
-										Add to cart
-									</button>
+									<form action="{{url('/add-to-cart')}}" method="POST">
+										{{csrf_field()}}
+										<label>Quantity: </label>
+										<input type="number" name="quantity" value="0" />
+										<input type="hidden" name="product_id" value="{{$product->id}}"/>
+										<button type="submit" name="btn" class="btn btn-fefault cart">
+											<i class="fa fa-shopping-cart"></i>
+											Add to cart
+										</button>
+									</form>
 								</span>
 								<p><b>Color:</b> {{$product->product_color}}</p>
 								
 								<p><b>Product short description:</b><br/>{{$product->product_short_description}}</p>
 								<p><b>Product long description:</b><br/>{{$product->product_long_description}}</p>
+
+								
 								<!-- <a href=""><img src="{{asset('/')}}/back-end/images/product-details/share.png" class="share img-responsive"  alt="" /></a> -->
 							</div><!--/product-information-->
 						</div>

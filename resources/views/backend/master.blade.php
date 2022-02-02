@@ -118,7 +118,7 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        @yield('body')
+                        @yield('body'
                         
                     </div>
                 </main>

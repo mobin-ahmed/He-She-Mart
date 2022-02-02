@@ -16,21 +16,20 @@
 							<div class="item active">
 								
 								<div class="col-sm-12">
-									<img src="{{url("$admin->image")}}" class="girl img-responsive" alt="" height="150" />
+									<img height="100" src="{{url("$admin->image")}}" class="girl img-responsive" alt=""  />
 								</div>
 							</div>
 							<div class="item">
 							<div class="col-sm-12">
-									<img src="{{url("$admin->image")}}" class="girl img-responsive" alt="" height="150"/>
+									<img height="100" src="{{url("$admin->image")}}" class="girl img-responsive" alt="" />
 								</div>
 							</div>
 							
 							<div class="item">
 							<div class="col-sm-12">
-									<img src="{{url("$admin->image")}}" class="girl img-responsive" alt="" height="150"/>
+									<img height="100" src="{{url("$admin->image")}}" class="girl img-responsive" alt="" />
 								</div>
 							</div>
-							
 						</div>
 						
 						<a href="#slider-carousel" class="left control-carousel hidden-xs" data-slide="prev">
@@ -54,7 +53,11 @@
 				<div class="col-sm-12 padding-right">
 					<div class="features_items"><!--features_items-->
 						<h2 class="title text-center">Features Items</h2>
+						<?php $i=0; ?>
 						@foreach($product as $products)
+						<?php
+							$i=$i+1; ?>
+						@if($i==3) <break out of if and foreach here> @endif
 						<div class="col-sm-4">
 							<div class="product-image-wrapper">
 								<div class="single-products">
@@ -73,13 +76,12 @@
 						
 						
 						
-						
 					</div><!--features_items-->
 					
 					
 					
-					<div class="recommended_items"><!--recommended_items-->
-						<h2 class="title text-center">recommended items</h2>
+					<!-- <div class="recommended_items">recommended_items -->
+						<!-- <h2 class="title text-center">recommended items</h2>
 						
 						<div id="recommended-item-carousel" class="carousel slide" data-ride="carousel">
 							<div class="carousel-inner">
@@ -107,7 +109,7 @@
 								<i class="fa fa-angle-right"></i>
 							  </a>			
 						</div>
-					</div><!--/recommended_items-->
+					</div>/recommended_items -->
 					
 				</div>
 			</div>

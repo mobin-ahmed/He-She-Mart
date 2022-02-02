@@ -36,6 +36,7 @@ Route::post('/update-product/{id}', [productController::class,'updateProduct']);
 
 // front-end(userinterface)..................
 Route::get('/', [userHomePage::class, 'homePage']);
+Route::get('/home', [userHomePage::class, 'homePage']);
 Route::get('/login-register-page', [userHomePage::class, 'loginRegisterPage']);
 Route::get('/contact-page', [userHomePage::class, 'contactPage']);
 Route::get('/cart-page', [userHomePage::class, 'cartPage']);
@@ -44,3 +45,6 @@ Route::get('/product-details-page/{id}', [ProductsController::class, 'productDet
 Route::get('/payment-page', [userHomePage::class, 'paymentPage']);
 Route::post('/user-register', [userController::class, 'userRegister']);
 Route::post('/user-login', [userController::class, 'userLogin']);
+Route::post('/add-to-cart', [userHomePage::class, 'addToCart']);
+Route::get('/delete-cart-item/{$rowId}', [userHomePage::class, 'hh']);
+

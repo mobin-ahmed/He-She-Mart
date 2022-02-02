@@ -16,7 +16,7 @@
                                 <table class="table table-bordered">
                                     <thead>
                                         <tr>
-                                            <th>SN.</th>
+                                            <!-- <th>SN.</th> -->
                                             <th>Product Name</th>
                                             <th>Product Price</th>
                                             <th>Product Color</th>
@@ -41,7 +41,7 @@
                                     @foreach($products as $v_product)   
                                     <tbody>
                                         <tr>
-                                            <td>{{$v_product->product_id}}</td>
+                                            <!-- <td>{{$v_product->product_id}}</td> -->
                                             <td class="center">{{$v_product->product_name}}</td>
                             
                                             <td class="center">{{$v_product->product_price}} Tk</td>
